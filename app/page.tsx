@@ -12,13 +12,13 @@ const Common = dynamic(() => import('@/components/canvas/View').then((mod) => mo
 export default function Page() {
   return (
     <section className="mx-auto bg-gray-900 text-white relative w-screen h-screen">
-      <View orbit className='z-0 absolute h-full sm:h-full sm:w-full hidden lg:block'>
+      <View orbit className='absolute h-full sm:h-full sm:w-full hidden lg:block z-0'>
         <Suspense fallback={null}>
           <Ari scale={0.25} position={[-1, -2.75, 2]} rotation={[0.3, 0.4, -0.1]} />
           <Common />
         </Suspense>
       </View>
-      <div className="lg:mx-auto absolute lg:px-40 px-10 py-32 lg:flex lg:h-screen w-screen lg:items-center z-10 justify-end">
+      <div className="absolute px-10 py-32 w-screen z-10 justify-end lg:mx-auto lg:px-40 lg:flex lg:h-screen lg:items-center ">
         <div className="lg:text-right">
           <h1
             className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
