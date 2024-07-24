@@ -14,7 +14,7 @@ export const Common = ({ color }: { color?: string }) => (
   </Suspense>
 )
 
-const View = forwardRef(({ children, orbit, ...props }, ref) => {
+const View = forwardRef(({ children, orbit, ...props }: { orbit: boolean, children: any, className: string }, ref) => {
   const localRef = useRef(null)
   useImperativeHandle(ref, () => localRef.current)
 

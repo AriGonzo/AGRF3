@@ -19,7 +19,7 @@ export default function Page() {
         </Suspense>
       </View>
       <div className="lg:mx-auto absolute lg:px-40 px-10 py-32 lg:flex lg:h-screen w-screen lg:items-center z-10 justify-end">
-        <div className="lg:text-right sm:text-center">
+        <div className="lg:text-right">
           <h1
             className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
           >
