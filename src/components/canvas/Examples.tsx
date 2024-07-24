@@ -66,3 +66,10 @@ export function Dog(props) {
 
   return <primitive object={scene} {...props} />
 }
+
+export function Ari(props) {
+  const { scene } = useGLTF('/cleanPoser.glb');
+  scene.rotateX
+
+  return <primitive object={scene} {...props} />
+}
