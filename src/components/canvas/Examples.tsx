@@ -36,3 +36,32 @@ export function Ari(props) {
     </mesh>
   )
 }
+
+export function AriAtWork(props) {
+  const { scene, animations } = useGLTF('/DigiariWORKING.glb');
+
+  const animationKey = "Armature|mixamo.com|Layer0"
+
+  let mixer
+  if (animations.length) {
+    mixer = new THREE.AnimationMixer(scene);
+    animations.forEach(clip => {
+
+      if (clip.name === animationKey) {
+        const action = mixer.clipAction(clip);
+        action.setLoop(THREE.LoopPingPong)
+        action.play();
+      }
+    });
+  }
+
+  useFrame((state, delta) => {
+    mixer?.update(delta)
+  })
+
+  return (
+    <mesh>
+      <primitive object={scene} {...props} />
+    </mesh>
+  )
+}

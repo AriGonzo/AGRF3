@@ -11,21 +11,29 @@ const Common = dynamic(() => import('@/components/canvas/View').then((mod) => mo
 
 export default function Page() {
   return (
-    <section className="mx-auto bg-gray-900 text-white relative w-screen h-screen">
-      <View className='absolute h-full w-full hidden lg:block z-0'>
+    <section className="mx-auto bg-gray-900 text-white w-screen h-screen flex flex-col lg:flex-row">
+      <View className='lg:block z-0 basis-1/2 lg:basis-1/4'>
         <Suspense fallback={null}>
-          <Ari scale={0.25} position={[-1, -2.75, 2]} rotation={[0.3, 0.2, -0.1]} />
+          <Ari scale={0.25} position={[0, -2.75, 2]} rotation={[0.3, 0.2, 0]} />
           <Common />
         </Suspense>
       </View>
-      <div className="absolute px-10 py-32 w-screen lg:w-1/2 z-0 justify-end lg:mx-auto lg:flex lg:h-screen lg:items-center right-0">
+      <div className="basis-1/2 lg:basis-3/4 px-10 py-10 lg:py-32 w-screen z-0 justify-end lg:mx-auto lg:flex lg:h-screen lg:items-center right-0">
         <div className="lg:text-right">
           <h1
-            className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+            className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-5xl lg:text-8xl font-extrabold text-transparent"
           >
-            Innovative Solutions,
-
-            <span className="sm:block"> Positive Vibes. </span>
+            Innovative
+          </h1>
+          <h1
+            className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-5xl lg:text-8xl font-extrabold text-transparent"
+          >
+            Solutions</h1>
+          <h1
+            className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-5xl lg:text-8xl font-extrabold text-transparent"
+          > Positive</h1><h1
+            className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-5xl lg:text-8xl font-extrabold text-transparent"
+          > Vibes.
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
@@ -42,7 +50,7 @@ export default function Page() {
 
             <a
               className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="#"
+              href="/WIP"
             >
               Learn More About Me
             </a>
