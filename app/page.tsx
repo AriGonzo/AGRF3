@@ -23,13 +23,13 @@ export default function Page() {
           <h1
             className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
           >
-            Innovative Code,
+            Innovative Solutions,
 
             <span className="sm:block"> Positive Vibes. </span>
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-            Turning ideas into magic with cutting-edge tech solutions,<span className="block">clear effective communication, and teamwork.</span>
+            Turning ideas into magic with cutting-edge tech,<span className="block">clear effective communication and teamwork.</span>
           </p>
 
           <div className="mt-8 flex flex-wrap justify-end gap-4">
