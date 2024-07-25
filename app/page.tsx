@@ -29,7 +29,7 @@ export default function Page() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-            Turning ideas into magic with cutting-edge tech solutions, clear effective communication, and teamwork.
+            Turning ideas into magic with cutting-edge tech solutions,<span className="block">clear effective communication, and teamwork.</span>
           </p>
 
           <div className="mt-8 flex flex-wrap justify-end gap-4">
