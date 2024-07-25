@@ -27,7 +27,7 @@ export function Ari(props) {
   function onClick(x) {
     let action = mixer._actions[0];
     action.setLoop(THREE.LoopOnce);
-    action.play();
+    action.reset().play();
   }
 
   return (
