@@ -5,8 +5,8 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three'
 
-export function Ari(props) {
-  const { scene, animations } = useGLTF('/cleanPoser2.glb');
+export function AriLoPoly(props) {
+  const { scene, animations } = useGLTF('/ariPose.glb');
 
 
 

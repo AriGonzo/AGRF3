@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 
-const Ari = dynamic(() => import('@/components/canvas/Examples').then((mod) => mod.Ari), { ssr: true })
+const Ari = dynamic(() => import('@/components/canvas/Examples').then((mod) => mod.AriLoPoly), { ssr: true })
 const View = dynamic(() => import('@/components/canvas/View').then((mod) => mod.View), {
   ssr: false
 })
@@ -28,7 +28,7 @@ export default function Page() {
           <h1
             className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-5xl lg:text-8xl font-extrabold text-transparent"
           >
-            Solutions</h1>
+            Solutions,</h1>
           <h1
             className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-5xl lg:text-8xl font-extrabold text-transparent"
           > Positive</h1><h1
