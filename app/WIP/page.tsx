@@ -22,10 +22,10 @@ export default function Page() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-            I'm hard at work adding more fun surprises and interactive elements so be sure to check back!</p>
+            I&apos;m hard at work adding more fun surprises and interactive elements so be sure to check back!</p>
           <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-            <span className="block">If you'd like to follow along the progress, check out my blog below.
-              Also, if you have any ideas kicking around and could use some help, email me! I'm always down to chat</span>
+            <span className="block">If you&apos;d like to follow along the progress, check out my blog below.
+              Also, if you have any ideas kicking around and could use some help, email me! I&apos;m always down to chat</span>
           </p>
 
           <div className="mt-8 flex flex-wrap justify-end gap-4">
