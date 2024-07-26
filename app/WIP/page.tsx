@@ -12,7 +12,7 @@ const Common = dynamic(() => import('@/components/canvas/View').then((mod) => mo
 export default function Page() {
   return (
     <section className="mx-auto bg-gray-900 text-white relative w-screen h-screen flex flex-col lg:flex-row">
-      <div className="px-10 py-10 lg:py-32 w-screen lg:w-1/2 z-0 justify-end lg:mx-auto lg:flex lg:items-center basis-1/2">
+      <div className="py-10 px-10 lg:py-32 justify-end lg:flex lg:items-center basis-1/2">
         <div className="lg:text-right">
           <h1
             className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl py-2"
@@ -45,9 +45,9 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <View orbit className='w-full lg:block basis-1/2'>
+      <View map className='basis-1/2 sm:mx-10'>
         <Suspense fallback={null}>
-          <Ari scale={0.25} position={[-2, -1.9, 2.5]} rotation={[0.3, 0.2, -0.1]} />
+          <Ari scale={0.15} position={[-0.5, 0, 0]} rotation={[0.5, -0.3, 0]} />
           <Common />
         </Suspense>
       </View>

@@ -1,7 +1,7 @@
 'use client'
 
 import { forwardRef, Suspense, useImperativeHandle, useRef } from 'react'
-import { OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three/drei'
+import { ArcballControls, MapControls, OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three/drei'
 import { Three } from '@/helpers/components/Three'
 
 export const Common = ({ color }: { color?: string }) => (
@@ -14,7 +14,7 @@ export const Common = ({ color }: { color?: string }) => (
   </Suspense>
 )
 
-const View = forwardRef(({ children, orbit, ...props }: { orbit?: boolean, children: any, className: string }, ref) => {
+const View = forwardRef(({ children, orbit, archball, map, ...props }: { orbit?: boolean, children: any, className: string, archball?: boolean, map?: boolean }, ref) => {
   const localRef = useRef(null)
   useImperativeHandle(ref, () => localRef.current)
 
@@ -25,6 +25,8 @@ const View = forwardRef(({ children, orbit, ...props }: { orbit?: boolean, child
         <ViewImpl track={localRef}>
           {children}
           {orbit && <OrbitControls />}
+          {archball && <ArcballControls />}
+          {map && <MapControls />}
         </ViewImpl>
       </Three>
     </>

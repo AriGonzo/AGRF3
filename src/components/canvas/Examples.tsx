@@ -37,6 +37,38 @@ export function AriLoPoly(props) {
   )
 }
 
+export function AriHome(props) {
+  const { scene, animations } = useGLTF('/cleanPoser.glb');
+
+
+
+  let mixer
+  if (animations.length) {
+    mixer = new THREE.AnimationMixer(scene);
+    animations.forEach(clip => {
+      if (clip.name === 'AriSmile and point') {
+        mixer.clipAction(clip);
+      }
+    });
+  }
+
+  useFrame((state, delta) => {
+    mixer?.update(delta)
+  })
+
+  function onClick(x) {
+    let action = mixer._actions[0];
+    action.setLoop(THREE.LoopOnce);
+    action.reset().play();
+  }
+
+  return (
+    <mesh onClick={onClick}>
+      <primitive object={scene} {...props} />
+    </mesh>
+  )
+}
+
 export function AriAtWork(props) {
   const { scene, animations } = useGLTF('/DigiariWORKING.glb');
 
