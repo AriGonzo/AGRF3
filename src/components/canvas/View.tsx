@@ -3,6 +3,7 @@
 import { forwardRef, Suspense, useImperativeHandle, useRef } from 'react'
 import { ArcballControls, MapControls, OrbitControls, PerspectiveCamera, View as ViewImpl } from '@react-three/drei'
 import { Three } from '@/helpers/components/Three'
+import * as THREE from 'three'
 
 export const Common = ({ color }: { color?: string }) => (
   <Suspense fallback={null}>
@@ -24,7 +25,7 @@ const View = forwardRef(({ children, orbit, archball, map, ...props }: { orbit?:
       <Three>
         <ViewImpl track={localRef}>
           {children}
-          {orbit && <OrbitControls />}
+          {orbit && <OrbitControls target={new THREE.Vector3(0, 0, 0)} />}
           {archball && <ArcballControls />}
           {map && <MapControls />}
         </ViewImpl>

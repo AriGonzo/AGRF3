@@ -45,7 +45,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <View map className='basis-1/2 sm:mx-10'>
+      <View orbit className='basis-1/2 sm:mx-10'>
         <Suspense fallback={null}>
           <Ari scale={0.15} position={[-0.5, 0, 0]} rotation={[0.5, -0.3, 0]} />
           <Common />

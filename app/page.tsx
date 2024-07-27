@@ -12,7 +12,7 @@ const Common = dynamic(() => import('@/components/canvas/View').then((mod) => mo
 export default function Page() {
   return (
     <section className="mx-auto bg-gray-900 text-white relative w-screen h-screen flex flex-col lg:flex-row">
-      <View map className='basis-1/2'>
+      <View orbit className='basis-1/2'>
         <Suspense fallback={null}>
           <Ari scale={0.25} position={[0, -2, 0]} rotation={[0.25, 0, 0]} />
           <Common />
