@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 
-const Ari = dynamic(() => import('@/components/canvas/Examples').then((mod) => mod.AriAtWork), { ssr: true })
+const Ari = dynamic(() => import('@/components/canvas/Examples').then((mod) => mod.AriHome), { ssr: false })
 const View = dynamic(() => import('@/components/canvas/View').then((mod) => mod.View), {
   ssr: false
 })
@@ -11,8 +11,8 @@ const Common = dynamic(() => import('@/components/canvas/View').then((mod) => mo
 
 export default function Page() {
   return (
-    <section className="mx-auto bg-gray-900 text-white relative w-screen h-screen flex flex-col lg:flex-row">
-      <div className="py-10 px-10 lg:py-32 justify-end lg:flex lg:items-center basis-1/2">
+    <section className="mx-auto bg-gray-900 text-white relative w-screen h-screen flex flex-col lg:flex-row-reverse">
+      <div className="py-10 px-10 lg:py-32 justify-start lg:flex lg:items-center basis-1/2">
         <div className="lg:text-right">
           <h1
             className="bg-gradient-to-r animated-background from-green-300 via-blue-400 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl py-2"
@@ -29,25 +29,18 @@ export default function Page() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-end gap-4">
-            <a
-              className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-              href="https://blog.arigonzalez.dev"
-            >
+            <a className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="https://blog.arigonzalez.dev">
               Blog
             </a>
-
-            <a
-              className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="#"
-            >
-              Email
+            <a className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" href="#">
+              Contact
             </a>
           </div>
         </div>
       </div>
       <View orbit className='basis-1/2 sm:mx-10'>
         <Suspense fallback={null}>
-          <Ari scale={0.15} position={[-0.5, 0, 0]} rotation={[0.5, -0.3, 0]} />
+          <Ari scale={0.15} position={[0, -0.75, 0]} rotation={[0.5, -0.3, 0]} />
           <Common />
         </Suspense>
       </View>
