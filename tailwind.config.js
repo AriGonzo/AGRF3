@@ -8,10 +8,17 @@ module.exports = {
     fontFamily: {
       gilroyHeavy: ['Gilroy-Heavy', 'san-serif'],
       gilroy: ['Gilroy', 'san-serif'],
-    }
+    },
+    duration: {
+      fast: "1s",
+      normal: "3s",
+      slow: "5s",
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@designbycode/tailwindcss-text-glitch"),
+  ],
 }
