@@ -21,7 +21,7 @@ export default function Landing({ triggerContactModal }: { triggerContactModal: 
           <Common />
         </Suspense>
       </View>
-      <div className="py-10 px-10 lg:px-32 justify-end lg:flex lg:items-center basis-1/2 lg:w-screen lg:basis-auto">
+      <div className="py-0 px-10 lg:py-10 lg:px-32 justify-end lg:flex lg:items-center basis-1/2 lg:w-screen lg:basis-auto">
         <div className="lg:text-right">
           <h1 className={headlineClassName}>Ari Gonzalez | Software Engineer</h1>
           <h2 className={taglineClassName}> Innovative</h2>

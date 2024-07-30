@@ -12,10 +12,10 @@ export default function Page() {
   const nodeRef = useRef(null);
   return (
     <>
-      <section className="bg-gray-900 text-white h-screen flex flex-col lg:flex-row">
+      <section className="bg-gray-900 text-white h-screen flex flex-col pb-10 lg:flex-row">
         <Landing triggerContactModal={setShowModal} />
       </section>
-      <section className="bg-gray-900 text-white lg:h-screen flex flex-col" id="skills">
+      <section className="bg-gradient-to-b from-gray-900 to-gray-700 text-white lg:h-screen flex flex-col" id="skills">
         <Skills triggerContactModal={setShowModal} />
       </section>
       <CSSTransition

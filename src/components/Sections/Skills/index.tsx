@@ -45,12 +45,11 @@ const skills: Skill[] = [{
 }]
 
 export default function Skills({ triggerContactModal }: { triggerContactModal: Dispatch<SetStateAction<boolean>> }) {
-  const [glitch, setGlitch] = useState(false);
 
   return (
     <div className="mx-auto lg:mt-0 max-w-screen-xl px-4 sm:px-6 sm:py-12 lg:px-8">
-      <div className="text-center mb-20 sm:mb-5">
-        <h2 className="text-3xl font-bold sm:text-5xl font-gilroy hover:text-glitch"><span className={glitch ? 'text-glitch' : ''}>Turning ideas into magic with cutting-edge tech, <span className="lg:block"> clear effective communication and teamwork.</span></span></h2>
+      <div className="text-center mb-30 sm:mb-5">
+        <h2 className="text-3xl font-bold lg:mb-20 sm:text-5xl font-gilroy hover:text-glitch">Turning ideas into magic with cutting-edge tech, <span className="lg:block"> clear effective communication and teamwork.</span></h2>
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -60,8 +59,8 @@ export default function Skills({ triggerContactModal }: { triggerContactModal: D
       </div>
 
       <div className="mt-12 text-center mb-12">
-        <button onClick={() => triggerContactModal(true)} className="inline-block rounded bg-purple-900 px-12 py-3 text-sm font-medium text-white transition hover:bg-purple-700 focus:outline-none focus:ring focus:ring-yellow-400">
-          Let&apos;s Chat
+        <button onClick={() => triggerContactModal(true)} className="inline-block rounded bg-purple-900 px-12 py-3 text-lg font-large text-white transition hover:bg-purple-700 focus:outline-none focus:ring focus:ring-yellow-400">
+          Let&apos;s Make Something
         </button>
       </div>
     </div>
