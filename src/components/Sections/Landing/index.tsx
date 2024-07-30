@@ -32,7 +32,7 @@ export default function Landing({ triggerContactModal }: { triggerContactModal: 
             <button onClick={() => triggerContactModal(true)} className="block w-full rounded border border-purple-900 bg-purple-800 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto">
               Get in Touch
             </button>
-            <a className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" href="#skills" >
+            <a className="text-center block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto" href="#skills" >
               Learn More About Me
             </a>
           </div>

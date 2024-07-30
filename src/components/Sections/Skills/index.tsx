@@ -49,7 +49,7 @@ export default function Skills({ triggerContactModal }: { triggerContactModal: D
 
   return (
     <div className="mx-auto lg:mt-0 max-w-screen-xl px-4 sm:px-6 sm:py-12 lg:px-8">
-      <div className="text-center mb-20">
+      <div className="text-center mb-20 sm:mb-5">
         <h2 className="text-3xl font-bold sm:text-5xl font-gilroy hover:text-glitch"><span className={glitch ? 'text-glitch' : ''}>Turning ideas into magic with cutting-edge tech, <span className="lg:block"> clear effective communication and teamwork.</span></span></h2>
       </div>
 
@@ -59,7 +59,7 @@ export default function Skills({ triggerContactModal }: { triggerContactModal: D
         ))}
       </div>
 
-      <div className="mt-12 text-center">
+      <div className="mt-12 text-center mb-12">
         <button onClick={() => triggerContactModal(true)} className="inline-block rounded bg-purple-900 px-12 py-3 text-sm font-medium text-white transition hover:bg-purple-700 focus:outline-none focus:ring focus:ring-yellow-400">
           Let&apos;s Chat
         </button>
