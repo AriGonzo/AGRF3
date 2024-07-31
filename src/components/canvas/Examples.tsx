@@ -1,7 +1,6 @@
 'use client'
 
-import { useLayoutEffect, useRef } from 'react';
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three'
 
@@ -71,8 +70,6 @@ export function AriHome(props) {
 
 export function AriAtWork(props) {
   const { scene, animations } = useGLTF('/Digiari1.glb');
-
-  console.log(animations)
 
   const animationKey = "SlimType"
 

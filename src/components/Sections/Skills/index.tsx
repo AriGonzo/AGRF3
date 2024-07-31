@@ -6,7 +6,7 @@ import { TbUserHeart } from "react-icons/tb";
 import { RiNextjsLine, RiTeamFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
 
 export type Skill = {
