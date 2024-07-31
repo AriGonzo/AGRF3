@@ -69,8 +69,8 @@ export function AriHome(props) {
 }
 
 export function AriAtWork(props) {
-  const { scene, animations } = useGLTF('/Digiari1.glb');
-
+  const { scene, animations } = useGLTF('/Digiari1d.glb');
+  
   const animationKey = "SlimType"
 
   let mixer

@@ -25,7 +25,7 @@ const View = forwardRef(({ children, orbit, archball, map, ...props }: { orbit?:
       <Three>
         <ViewImpl track={localRef}>
           {children}
-          {orbit && <OrbitControls target={new THREE.Vector3(0, 0, 0)} enableZoom={false} />}
+          {orbit && <OrbitControls target={new THREE.Vector3(0, 0, 0)} enableZoom={false} onStart={(e) => console.log(e)} />}
           {archball && <ArcballControls />}
           {map && <MapControls />}
         </ViewImpl>
