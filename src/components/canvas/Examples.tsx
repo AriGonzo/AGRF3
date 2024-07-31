@@ -70,9 +70,11 @@ export function AriHome(props) {
 }
 
 export function AriAtWork(props) {
-  const { scene, animations } = useGLTF('/DigiariWORKING.glb');
+  const { scene, animations } = useGLTF('/Digiari1.glb');
 
-  const animationKey = "Armature|mixamo.com|Layer0"
+  console.log(animations)
+
+  const animationKey = "SlimType"
 
   let mixer
   if (animations.length) {
