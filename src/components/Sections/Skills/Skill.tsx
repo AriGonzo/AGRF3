@@ -2,7 +2,7 @@ import { type Skill } from ".";
 
 export default function Skill({ icon, title, description }: Skill) {
   return (
-    <a className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10" href="/WIP">
+    <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-purple-900 hover:shadow-purple-900">
       {icon ?? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +29,6 @@ export default function Skill({ icon, title, description }: Skill) {
       <p className="mt-1 text-sm text-gray-300">
         {description}
       </p>
-    </a>
+    </div>
   )
 }

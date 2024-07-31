@@ -29,7 +29,7 @@ export default function Head() {
       <meta property='og:title' content={title} />
       <meta property='og:type' content='site' />
       <meta property='og:url' content={url} />
-      <meta property='og:image' content={'/favicon/favicon-16x16.png'} />
+      <meta property='og:image' content={'/img/logo.png'} />
       <meta property='og:site_name' content={title} />
       <meta property='og:description' content={description} />
 
@@ -46,7 +46,7 @@ export default function Head() {
         <meta name="HandheldFriendly" content="true"/>  */}
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <meta name='theme-color' content='#000' />
-      <link rel='shortcut icon' href='/favicon/apple-touch-icon.png' />
+      <link rel='shortcut icon' href='/favicon/favicon-16x16.png' />
     </>
   )
 }

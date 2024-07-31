@@ -3,6 +3,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { ImGithub } from "react-icons/im";
 
 export default function ContactModal({ setShowModal }) {
+  const contactButtonClassName = 'font-bold py-6 px-12 hover:border-purple-900 shadow-md transition hover:shadow-purple-900 rounded inline-flex items-center'
   return (
     <div>
       <div
@@ -13,17 +14,17 @@ export default function ContactModal({ setShowModal }) {
           <div className="border-0 rounded-lg shadow-lg relative w-full bg-white outline-none focus:outline-none">
             <div className="flex flex-col lg:flex-row">
               <div className="relative p-6 flex justify-center">
-                <a href="https://www.linkedin.com/in/arigonzoari/" className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-6 px-12 rounded inline-flex items-center">
+                <a href="https://www.linkedin.com/in/arigonzoari/" className={contactButtonClassName}>
                   <FaLinkedin className="text-5xl fill-purple-900" />
                 </a>
               </div>
               <div className="relative p-6 flex justify-center">
-                <a href="https://www.github.com/arigonzo" className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-6 px-12 rounded inline-flex items-center">
+                <a href="https://www.github.com/arigonzo" className={contactButtonClassName}>
                   <ImGithub className="text-5xl fill-purple-900" />
                 </a>
               </div>
               <div className="relative p-6 flex justify-center">
-                <a href="mailto:info@example.com" target="_blank" className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-6 px-12 rounded inline-flex items-center">
+                <a href="mailto:info@example.com" target="_blank" className={contactButtonClassName}>
                   <MdOutlineMail className="text-5xl fill-purple-900" />
                 </a>
               </div>
