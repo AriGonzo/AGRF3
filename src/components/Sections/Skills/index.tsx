@@ -4,7 +4,7 @@ import Skill from "./Skill"
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbUserHeart } from "react-icons/tb";
 import { RiNextjsLine, RiTeamFill } from "react-icons/ri";
-import { TbBrandThreejs } from "react-icons/tb";
+import { TbProtocol } from "react-icons/tb";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
 import { Dispatch, SetStateAction } from "react";
 
@@ -27,9 +27,9 @@ const skills: Skill[] = [{
   title: 'NextJS',
   description: 'Skilled in building reusable components, managing state with React hooks, and integrating with various libraries and tools to deliver scalable and maintainable front-end solutions.'
 }, {
-  icon: <TbBrandThreejs className={skillIconStrokeClassName} />,
-  title: 'Three.js',
-  description: 'Eager to expand my expertise and continuously improve my skills, driven by a strong passion for bringing immersive and interactive experiences to life.'
+  icon: <TbProtocol className={skillIconStrokeClassName} />,
+  title: '@atproto',
+  description: 'Eager to expand my expertise and continuously improve my skills, driven by a strong passion for data ownership and privacy.'
 }, {
   icon: <TbUserHeart className={skillIconStrokeClassName} />,
   title: 'Passionate about UX',

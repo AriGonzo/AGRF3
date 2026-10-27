@@ -16,10 +16,8 @@ export default function Landing({ triggerContactModal }: { triggerContactModal: 
   return (
     <>
       <View orbit className='basis-1/2 w-screen lg:absolute lg:z-10 lg:top-0 lg:left-0 lg:h-screen lg:w-2/3'>
-        <Suspense fallback={null}>
-          <Ari scale={0.15} position={[-1, -0.5, 0]} rotation={[0.5, 0.2, 0]} />
-          <Common />
-        </Suspense>
+        <Ari scale={0.15} position={[-1, -0.5, 0]} rotation={[0.5, 0.2, 0]} />
+        <Common />
       </View>
       <div className="py-0 px-10 lg:py-10 lg:px-32 justify-end lg:flex lg:items-center basis-1/2 lg:w-screen lg:basis-auto">
         <div className="lg:text-right">
