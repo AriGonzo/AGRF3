@@ -30,7 +30,7 @@ export default function ContactModal({ setShowModal }) {
               </div>
               <div className="relative p-6 flex justify-center">
                 <a href="https://bsky.app/profile/kingsloth.arigonzalez.dev" target="_blank" className={contactButtonClassName}>
-                  <img src="/icons/Bluesky_Logo.svg" />
+                  <img src="/icons/Bluesky_Logo.svg" style={{ width: 48 }} />
                 </a>
               </div>
             </div>
