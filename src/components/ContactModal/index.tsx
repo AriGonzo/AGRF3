@@ -15,17 +15,22 @@ export default function ContactModal({ setShowModal }) {
             <div className="flex flex-col lg:flex-row">
               <div className="relative p-6 flex justify-center">
                 <a href="https://www.linkedin.com/in/arigonzoari/" className={contactButtonClassName}>
-                  <FaLinkedin className="text-5xl fill-purple-900" />
+                  <FaLinkedin className="text-5xl fill-blue-900" />
                 </a>
               </div>
               <div className="relative p-6 flex justify-center">
                 <a href="https://www.github.com/arigonzo" className={contactButtonClassName}>
-                  <ImGithub className="text-5xl fill-purple-900" />
+                  <ImGithub className="text-5xl fill-black-900" />
                 </a>
               </div>
               <div className="relative p-6 flex justify-center">
                 <a href="mailto:info@example.com" target="_blank" className={contactButtonClassName}>
-                  <MdOutlineMail className="text-5xl fill-purple-900" />
+                  <MdOutlineMail className="text-5xl fill-black" />
+                </a>
+              </div>
+              <div className="relative p-6 flex justify-center">
+                <a href="https://bsky.app/profile/kingsloth.arigonzalez.dev" target="_blank" className={contactButtonClassName}>
+                  <img src="/icons/Bluesky_Logo.svg" />
                 </a>
               </div>
             </div>
